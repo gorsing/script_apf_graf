@@ -1,0 +1,9 @@
+graph graphname {
+test--indir2--indir;
+}
+subgraph test{
+}
+subgraph indir2{
+}
+subgraph indir{
+}
