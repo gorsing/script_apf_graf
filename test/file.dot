@@ -1,0 +1,5 @@
+
+graph graphname {"test";
+"test"--"indir2";
+"test"--"indir";
+"indir"--"indir3";}

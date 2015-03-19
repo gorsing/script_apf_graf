@@ -1,9 +1,18 @@
-graph graphname {
-test--indir2--indir;
-}
-subgraph test{
-}
-subgraph indir2{
-}
-subgraph indir{
+graph graphname {"test";
+"test"--"indir2";
+"test"--"indir";
+"indir"--"indir3";
+
+subgraph "test"{
+
+subgraph "indir2"{
+"script.py";
+
+subgraph "indir"{
+
+subgraph "indir3"{
+"lib.pyc";
+"lib.py";
+"example1.png";
+"file.dot";
 }
