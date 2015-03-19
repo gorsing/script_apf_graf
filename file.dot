@@ -1,18 +1,24 @@
-graph graphname {"test";
+graph graphname {node [shape="box", style="filled", fillcolor="green", fontcolor="black", fontsize="9"];
+"test";
 "test"--"indir2";
 "test"--"indir";
 "indir"--"indir3";
 
 subgraph "test"{
-
+node [shape="circle", style="filled", fillcolor="blue",fontcolor="black"];
+}
 subgraph "indir2"{
+node [shape="circle", style="filled", fillcolor="blue",fontcolor="black"];
 "script.py";
-
+}
 subgraph "indir"{
-
+node [shape="circle", style="filled", fillcolor="blue",fontcolor="black"];
+}
 subgraph "indir3"{
+node [shape="circle", style="filled", fillcolor="blue",fontcolor="black"];
 "lib.pyc";
 "lib.py";
 "example1.png";
 "file.dot";
+}
 }
